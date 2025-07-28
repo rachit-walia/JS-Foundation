@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BOM Example</title>
+</head>
+<body>
+
+  <h2>Browser Object Model Example</h2>
+  <button onclick="showBOMInfo()">Show BOM Info</button>
+  <button onclick="goToGoogle()">Go to Google</button>
+
+  <script>
+    function showBOMInfo() {
+      // Alert using window.alert (part of BOM)
+      alert("Current URL is: " + window.location.href);
+
+      // Log screen information (BOM: screen object)
+      console.log("Screen Width: " + screen.width);
+      console.log("Screen Height: " + screen.height);
+
+      // Log browser info (BOM: navigator object)
+      console.log("Browser Info: " + navigator.userAgent);
+    }
+
+    function goToGoogle() {
+      // Redirect using BOM location object
+      window.location.href = "https://www.google.com";
+    }
+  </script>
+
+</body>
+</html>

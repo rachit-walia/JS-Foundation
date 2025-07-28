@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Example</title>
+</head>
+<body>
+
+  <h1 id="mainHeading">Welcome!</h1>
+  <p id="text">This is the original paragraph.</p>
+  <button onclick="changeContent()">Click Me</button>
+
+  <script>
+    function changeContent() {
+      // Access the heading element using DOM
+      document.getElementById("mainHeading").innerText = "Hello from JavaScript!";
+      
+      // Modify the paragraph text
+      document.getElementById("text").innerHTML = "You clicked the button. DOM updated this text!";
+      
+      // Change background color
+      document.body.style.backgroundColor = "#f0f8ff";
+    }
+  </script>
+
+</body>
+</html>
